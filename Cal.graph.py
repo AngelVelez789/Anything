@@ -1,9 +1,10 @@
+
 from tkinter import *
 import parser
+
+
 window = Tk()
 window.title("Cal Angel")
-
-
 display= Entry(window, font=("Calibri 20"))
 display.grid(row = 0, column = 0,columnspan = 25, padx =4, pady = 4 )
 
@@ -12,7 +13,7 @@ i=0
 def get_numbers(n):
     global i
     display.insert(i,n)
-    i+=1
+    i+=1 
 
 def get_operation(operator):
     global i
